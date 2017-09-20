@@ -36,10 +36,10 @@ public class Main
 		switch(choise)
 		{
 			case 1:
-				System.out.printf("Результат: %.3f", LagrangeInterpolation.lagrange(x0, n, x, y));
+				System.out.printf("Результат: %.3f  ln(%.3f) = %.3f", LagrangeInterpolation.lagrange(x0, n, x, y), x0, Math.log(x0));
 				break;
 			case 2:
-				System.out.printf("Результат: %.3f", NewtonInterpolation.newton(x0, n, x, y));
+				System.out.printf("Результат: %.3f  ln(%.3f) = %.3f", NewtonInterpolation.newton(x0, n, x, y), x0, Math.log(x0));
 				break;
 		}
 	}
